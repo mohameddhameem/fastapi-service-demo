@@ -1,0 +1,26 @@
+# Test your FastAPI endpoints
+
+# Test the root endpoint
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+# Test the hello endpoint with a test name
+GET http://127.0.0.1:8000/hello/test
+Accept: application/json
+
+###
+
+# Test the form endpoint
+GET http://127.0.0.1:8000/form
+Accept: application/json
+
+###
+
+# Test the form submission endpoint with test data
+POST http://127.0.0.1:8000/submit_form
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+
+name=test&address=test address
